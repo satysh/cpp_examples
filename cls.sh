@@ -1,4 +1,6 @@
 #!/bin/bash
 
 rm -fv *.exe
-rm -i -v -f *txt
+if [ -f *.txt ]; then
+	rm -i -v *.txt
+fi
