@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rm -fv *.exe
-rm -iv *txt
+rm -i -v -f *txt
