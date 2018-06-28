@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #define N (1024*1024)
 
-_global_ void kernel (float* dA)
+__global__ void kernel (float* dA)
 {
-    int idx = blockIdx.x * blockDim.x + threadId.x;
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;
     float x = 2.0f * 3.1415926f * (float)idx / (float)N;
     dA[idx] = sinf(sqrtf(x));
 }
