@@ -18,6 +18,7 @@ const char* file = "planet.dat";
 
 int main(int argc, char const *argv[])
 {
+    std::cout << "Privet!" << std::endl;
     planet pl;
     cout << fixed << right;
 
